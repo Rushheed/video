@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title> THE POWER OF TWOS</title>
-    <link href="./dist/output.css" rel="stylesheet" />
 </head>
 <body class="bg-[#D9D9D9]">
     <header class="flex justify-between items-end py-4 px-5 bg-[#4d732a]">
@@ -29,7 +28,7 @@
     <h1 class="font-bold text-4xl py-5 text-center text-[#2A3D19]">THE POWER OF TWOS</h1>
     <div class="flex flex-col items-center justify-center px-16 bg-[#DCAE96] mr-20 ml-20 mb-4">
         <div class="w-1/2 flex py-8">
-            <img src="images/bys.jpg">
+            <video controls src="videos/power.mp4"></video>
         </div>
         <div class="px-6 py-5 mr-10 ml-10 mt-6 mb-8">
             <p class="text-[#2A3D19] text-xl">The power of friendship is a profound and transformative force that 
@@ -38,18 +37,18 @@
         </div>
         <div class="flex gap-12 px-4 py-5 justify-center">
             <button class="bg-[#2A3D19] text-white hover:bg-green-400 px-4 py-3 ml-10 font-semibold"> ADD TO LIST </button>
-            <button class="flex gap-2 bg-[#2A3D19] text-white hover:bg-green-400 px-4 py-3 mr-10 font-semibold"> DOWNLOAD <img src="images/download.png" class="w-[20px]"></button>
+            <a download="" href="videos/power.mp4"><button class="flex gap-2 bg-[#2A3D19] text-white hover:bg-green-400 px-4 py-3 mr-10 font-semibold"> DOWNLOAD <img src="images/download.png" class="w-[20px]"></button></a>
         </div>
-        <p class="text-center text-[#2A3D19] px-6 py-3 font-semibold border-solid border-2 border-[#2A3D19] "> COMMENTS </p>
+        <p class="text-center text-[#2A3D19] px-6 py-3 font-semibold border-solid border-2 border-[#2A3D19]"> COMMENTS </p>
         <div class="flex flex-col w-1/2 mt-4">
             <form class="flex flex-col items-center">
-                <textarea class="w-full border-solid border-1 border-[#2A3D19] bg-green-100 px-3 h-[200px]" placeholder="Please type your comment here"></textarea>
+                <textarea id="text" class="w-full border-solid border-1 border-[#2A3D19] bg-green-100 px-3 h-[200px]" placeholder="Please type your comment here"></textarea>
             </form>
         </div>
             
         <div class="flex flex-row gap-12 py-5 justify-center">
             <a href="index.html"><button class="bg-[#2A3D19] hover:bg-green-400 text-white px-6 py-3 font-semibold"> BACK </button></a>
-            <button class="bg-[#2A3D19] hover:bg-green-400 text-white px-6 py-3 font-semibold"> SUBMIT </button> 
+            <button class="bg-[#2A3D19] hover:bg-green-400 text-white px-6 py-3 font-semibold" onclick="handleSubmit()"> SUBMIT </button> 
         </div>
     </div>
    
@@ -93,6 +92,6 @@
     </div>   
 </footer>
  
-    
+    <script src="main.js"></script>
 </body>
 </html>
